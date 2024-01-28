@@ -4,7 +4,6 @@ users = [
     {"name": "John Doe", "birthday": "1985.01.23"},
     {"name": "Jane Smith", "birthday": "1990.01.27"}
 ]
-
 def get_upcoming_birthdays(users=None):
     tdate=dtdt.today().date() # беремо сьогоднішню дату
     upcoming_birthdays=[] # створюємо список для результатів

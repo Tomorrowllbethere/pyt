@@ -26,5 +26,5 @@ data_second = dateobjects_entered.date()
 def get_days_from_today():    #створення функції для обрахування різниці між двома датами
     difference = (date_first.toordinal()-data_second.toordinal() )
     return difference
-#виведення реезультату
+#виведення результату
 print (f"It\'s about {get_days_from_today()} days")

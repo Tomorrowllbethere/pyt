@@ -15,5 +15,5 @@ try:                # перевірка на коректний ввід чис
 except ValueError:
     print('Здається, це не було число.\n Спробуй ще раз')
 
-lottery_numbers = get_numbers_ticket(min,max,quantity) # виклик функції
+lottery_numbers = get_numbers_ticket (min,max,quantity) # виклик функції
 print("Ваші лотерейні числа: ", lottery_numbers)

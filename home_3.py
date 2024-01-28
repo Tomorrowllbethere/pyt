@@ -1,5 +1,4 @@
 import re
-
 raw_numbers = [
     "067\\t123 4567",
     "(095) 234-5678\\n",
@@ -18,8 +17,7 @@ def normalize_phone(phone_number):
     number_just = re.sub(pattern_delete, replacement_symbol, phone_number) #видалення будь-яких знаків, окрім цифр
     number_just = number_just.split("0", maxsplit=1) #розділення рядків за 0
     number_just[0] = "+380" # заміна першого підрядка
-    number_formated= "".join(number_just) #обєднання рядків
+    number_formated= "".join(number_just) #об'єднання рядків
     return number_formated
-
 for num in raw_numbers:       #перевірка коду
     print("Нормалізовані номери телефонів для SMS-розсилки:", normalize_phone(num))
